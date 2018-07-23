@@ -1,0 +1,148 @@
+/* latin-ext */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyCMIT5lu.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+body {
+    padding: 0 1em;
+    background: #252528;
+    font-family: 'Raleway', sans-serif;
+    color:rgba(255, 246, 246, 0.76);
+}
+
+header{
+    text-align: right;
+}
+
+
+
+h1{
+    text-align: right;
+    color: rgba(255, 255, 255, .8);
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+article{
+    padding: .5em 0;
+}
+
+footer{
+   margin-top: 2em;
+   border-top: 1px solid rgba(255, 255, 255, .1);
+   padding-top: 2em;
+   text-align: right;
+   font-size: 1em;
+   
+}
+footer a {
+    
+    text-decoration: none;
+    color: rgba(181, 192, 181, 0.333);
+}
+
+footer a:hover{
+    text-decoration:underline;
+    color:rgba(255, 246, 246, 0.76);
+}
+
+
+/* Menu start */
+.menu
+{
+    list-style: none;
+    line-height: 42px;
+    margin: 2em auto ;
+    /* outline: 1px solid red; */
+    padding-left: 0;
+    width: 15em;
+}
+
+.menu a:hover{
+    margin-left: 1em;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
+.menu a {
+    color: #ddd;
+    display: block;
+    padding-left: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    
+   
+
+}
+
+.menu li{
+    box-shadow: 3px 0 rgba(255, 255, 255, .2) inset;
+    /* border-left: 3px solid rgba(255, 255, 255, .2); */
+    margin-bottom: 5px;
+    padding-left: 1.5em;
+   /*  outline:1px solid green; */
+   -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+  
+}
+
+.menu li:hover{
+    box-shadow: 15em 0 rgba(255, 255, 255, .2) inset;
+    
+}
+
+/* Menu end */
+
+/*Posicion responsive Menu*/
+
+nav{
+    background: rgba(0, 0, 0, .8);
+    box-sizing: border-box;
+    left:-16em;
+    padding-right: .25em;
+    top:0;
+    position: absolute;
+    z-index: 20;
+    height: 100%;
+    padding-top: 3em;
+    transition: all .4s;
+}
+
+nav.mostrar{
+    
+   
+    left:0;
+   
+}
+
+#mostrar-nav{
+    position: absolute;
+    top:2em;
+    left: 1em;
+    width: 30px;
+    height: 30px;
+    color: white;
+    z-index: 30;
+    cursor:pointer;
+    
+}
+
